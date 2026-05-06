@@ -27,7 +27,7 @@ public class Auto {
     }
 
     public void mostrarAuto(){
-         JOptionPane.showMessageDialog(null, toString() + motor.toString());
+         JOptionPane.showMessageDialog(null, toString() + "\n" + motor.toString());
     }
     
     @Override
