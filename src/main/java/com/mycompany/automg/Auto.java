@@ -25,4 +25,15 @@ public class Auto {
             System.out.println("El auto avanzo " + km + " kilometros");
         }
     }
+
+    public void mostrarAuto(){
+         JOptionPane.showMessageDialog(null, toString() + motor.toString());
+    }
+    
+    @Override
+    public String toString() {
+        return "Auto{" + "Marca= " + marca + ", Modelo= " + modelo + ", Color= " + color + ", Precio= " + precio + '}';
+    }
+    
+    
 }

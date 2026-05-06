@@ -45,5 +45,10 @@ public class Motor {
         this.caballosFuerza = caballosFuerza;
     }
 
+    @Override
+    public String toString() {
+        return "Motor{" + "Kilometros recorridos= " + kilometrosRecorridos + ", Cilindrada= " + cilindrada + ", Caballos de fuerza= " + caballosFuerza + '}';
+    }
+
     
 }
