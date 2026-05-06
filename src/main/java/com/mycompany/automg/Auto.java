@@ -16,6 +16,11 @@ public class Auto {
         this.precio = precio;
         this.motor = motor;
     }
+
+    public Auto() {
+    }
+    
+    
     
     public void avanzar(int km){
         if(motor.requiereCambioAceite()){
@@ -26,7 +31,7 @@ public class Auto {
         }
     }
 
-    public void mostrarAuto(){
+    public void mostrarInfo(){
          JOptionPane.showMessageDialog(null, toString() + "\n" + motor.toString());
     }
     

@@ -14,7 +14,7 @@ public class AutoMG {
         autos.add(new Auto("Chevrolet", "Cruze", "Blanco", 21000, new Motor(40000, 1.4f, 150)));
         
         for (int i = 0; i < autos.size(); i++) {
-            autos.get(i).mostrarAuto();
+            autos.get(i).mostrarInfo();
         }
         
         System.out.println("Que auto quiere probar: ");
