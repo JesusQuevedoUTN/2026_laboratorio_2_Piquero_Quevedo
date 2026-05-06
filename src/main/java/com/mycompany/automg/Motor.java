@@ -17,5 +17,33 @@ public class Motor {
         return this.kilometrosRecorridos > CAMBIO_DE_ACEITE;
     }
 
+    public void sumarKms(int suma){
+        this.kilometrosRecorridos+= suma;
+    }
+    
+    public int getKilometrosRecorridos() {
+        return kilometrosRecorridos;
+    }
+
+    public void setKilometrosRecorridos(int kilometrosRecorridos) {
+        this.kilometrosRecorridos = kilometrosRecorridos;
+    }
+
+    public float getCilindrada() {
+        return cilindrada;
+    }
+
+    public void setCilindrada(float cilindrada) {
+        this.cilindrada = cilindrada;
+    }
+
+    public int getCaballosFuerza() {
+        return caballosFuerza;
+    }
+
+    public void setCaballosFuerza(int caballosFuerza) {
+        this.caballosFuerza = caballosFuerza;
+    }
+
     
 }
