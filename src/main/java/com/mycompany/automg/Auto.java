@@ -1,5 +1,7 @@
 package com.mycompany.automg;
 
+import javax.swing.JOptionPane;
+
 public class Auto {
     private String marca;
     private String modelo;
@@ -15,5 +17,12 @@ public class Auto {
         this.motor = motor;
     }
     
-    
+    public void avanzar(int km){
+        if(motor.requiereCambioAceite()){
+            JOptionPane.showMessageDialog(null, "El auto necesita cambio de aceite.");
+        }else{
+           motor.sumarKms(km);
+            System.out.println("El auto avanzo " + km + " kilometros");
+        }
+    }
 }
