@@ -1,13 +1,14 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package com.mycompany.automg;
 
-/**
- *
- * @author Alumno
- */
+
 public class AutoUtilitario extends Auto{
+    private double capacidadDeCarga;
+    private double volumenCarga;
+
+    public AutoUtilitario(double capacidadDeCarga, double volumenCarga) {
+        this.capacidadDeCarga = capacidadDeCarga;
+        this.volumenCarga = volumenCarga;
+    }
+    
     
 }
