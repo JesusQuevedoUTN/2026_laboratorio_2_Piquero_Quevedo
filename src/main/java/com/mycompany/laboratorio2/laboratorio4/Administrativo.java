@@ -21,7 +21,7 @@ public class Administrativo extends Empleado{
     
     @Override
     public double calcularSueldo() {
-        return getSueldoBasico()*horasExtra;
+        return getSueldoBasico() + (getSueldoBasico()*horasExtra);
     }
     
 }
