@@ -32,4 +32,62 @@ abstract public class Empleado {
         System.out.println("Sueldo: $" + sueldoBasico);
     }
 
+    public static int getNroDeLegajo() {
+        return nroDeLegajo;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public String getApellido() {
+        return apellido;
+    }
+
+    public int getDni() {
+        return dni;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public int getCodigoEmpleado() {
+        return codigoEmpleado;
+    }
+
+    public double getSueldoBasico() {
+        return sueldoBasico;
+    }
+
+    public static void setNroDeLegajo(int nroDeLegajo) {
+        Empleado.nroDeLegajo = nroDeLegajo;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public void setApellido(String apellido) {
+        this.apellido = apellido;
+    }
+
+    public void setDni(int dni) {
+        this.dni = dni;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public void setCodigoEmpleado(int codigoEmpleado) {
+        this.codigoEmpleado = codigoEmpleado;
+    }
+
+    public void setSueldoBasico(double sueldoBasico) {
+        this.sueldoBasico = sueldoBasico;
+    }
+    
+    
+
 }
