@@ -1,7 +1,5 @@
 package com.mycompany.laboratorio2.laboratorio4;
 
-// Autor: Chisus
-// Fecha de creación: 07/05/2026
 abstract public class Empleado {
 
     private static int nroDeLegajo = 1;
@@ -87,7 +85,5 @@ abstract public class Empleado {
     public void setSueldoBasico(double sueldoBasico) {
         this.sueldoBasico = sueldoBasico;
     }
-    
-    
 
 }

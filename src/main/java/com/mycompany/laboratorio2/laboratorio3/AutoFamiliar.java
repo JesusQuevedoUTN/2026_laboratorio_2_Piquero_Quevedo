@@ -4,8 +4,8 @@ import com.mycompany.laboratorio2.Auto;
 import com.mycompany.laboratorio2.Motor;
 import javax.swing.JOptionPane;
 
+public class AutoFamiliar extends Auto {
 
-public class AutoFamiliar extends Auto{
     private int cantidadPuertas;
     private int cantidadSillas;
     Auto auto = new Auto();
@@ -15,11 +15,11 @@ public class AutoFamiliar extends Auto{
         this.cantidadPuertas = cantidadPuertas;
         this.cantidadSillas = cantidadSillas;
     }
-    
-  @Override
-  public void avanzar(int km){
-      auto.avanzar(km);
-  }  
+
+    @Override
+    public void avanzar(int km) {
+        auto.avanzar(km);
+    }
 
     @Override
     public String toString() {
@@ -50,18 +50,16 @@ public class AutoFamiliar extends Auto{
         this.auto = auto;
     }
 
-    public void revisarCantidadPuertas(){
-        if(cantidadPuertas < 2 || cantidadPuertas > 4){
-            JOptionPane.showMessageDialog(null,"El auto tiene una cantidad de puertas invalida");
+    public void revisarCantidadPuertas() {
+        if (cantidadPuertas < 2 || cantidadPuertas > 4) {
+            JOptionPane.showMessageDialog(null, "El auto tiene una cantidad de puertas invalida");
         }
     }
-    
-    public void revisarCantidadSillas(){
-        if(cantidadSillas < 2 || cantidadSillas > 5){
-            JOptionPane.showMessageDialog(null,"El auto tiene una cantidad de sillas invalida");
+
+    public void revisarCantidadSillas() {
+        if (cantidadSillas < 2 || cantidadSillas > 5) {
+            JOptionPane.showMessageDialog(null, "El auto tiene una cantidad de sillas invalida");
         }
     }
-    
-  
-    
+
 }

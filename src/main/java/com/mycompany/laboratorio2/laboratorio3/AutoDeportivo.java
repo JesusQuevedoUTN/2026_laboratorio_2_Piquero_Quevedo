@@ -4,10 +4,10 @@ import com.mycompany.laboratorio2.Auto;
 import com.mycompany.laboratorio2.Motor;
 import javax.swing.JOptionPane;
 
-public class AutoDeportivo extends Auto{
-    
+public class AutoDeportivo extends Auto {
+
     private double TIEMPO_LEGAL = 10;
-    
+
     private double velociadaMaxima;
     private double aceleracionACien;
 
@@ -33,21 +33,18 @@ public class AutoDeportivo extends Auto{
         this.aceleracionACien = aceleracionACien;
     }
 
-    
-    
     @Override
-    public void avanzar(int km){
-        if(this.velociadaMaxima/this.aceleracionACien <= TIEMPO_LEGAL){
+    public void avanzar(int km) {
+        if (this.velociadaMaxima / this.aceleracionACien <= TIEMPO_LEGAL) {
             JOptionPane.showMessageDialog(null, "El auto por ley no puede acelerar tan rápido por seguridad." + "\n" + "TIEMPO LEGAL MÍNIMO: " + TIEMPO_LEGAL);
-        }else{
-           super.avanzar(km);
+        } else {
+            super.avanzar(km);
         }
     }
-    
+
     @Override
     public String toString() {
         return super.toString() + ", AutoDeportivo{" + "velociadaMaxima=" + velociadaMaxima + ", aceleracionACien=" + aceleracionACien + '}';
     }
-    
-    
+
 }

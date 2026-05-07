@@ -4,12 +4,11 @@ import com.mycompany.laboratorio2.Auto;
 import com.mycompany.laboratorio2.Motor;
 import javax.swing.JOptionPane;
 
+public class AutoUtilitario extends Auto {
 
-public class AutoUtilitario extends Auto{
-    
-    private final double MAXIMA_CARGA   = 4000;
+    private final double MAXIMA_CARGA = 4000;
     private final double MAXIMO_VOLUMEN = 20;
-    
+
     private double capacidadDeCarga;
     private double volumenCarga;
 
@@ -23,8 +22,6 @@ public class AutoUtilitario extends Auto{
         this.capacidadDeCarga = capacidadDeCarga;
         this.volumenCarga = volumenCarga;
     }
-
-    
 
     public double getCapacidadDeCarga() {
         return capacidadDeCarga;
@@ -43,22 +40,19 @@ public class AutoUtilitario extends Auto{
     }
 
     @Override
-    public void avanzar(int km){
-        if(this.capacidadDeCarga >= MAXIMA_CARGA){
+    public void avanzar(int km) {
+        if (this.capacidadDeCarga >= MAXIMA_CARGA) {
             JOptionPane.showMessageDialog(null, "El camión no puede llevar algo tan pesado." + "\n" + "PESO MÁXIMO: " + MAXIMA_CARGA);
-        }else if (this.volumenCarga >= MAXIMO_VOLUMEN){
+        } else if (this.volumenCarga >= MAXIMO_VOLUMEN) {
             JOptionPane.showMessageDialog(null, "El camión no puede llevar algo tan grande." + "\n" + "VOLUMEN MÁXIMO: " + MAXIMO_VOLUMEN);
-        }else{
+        } else {
             super.avanzar(km);
         }
     }
-    
+
     @Override
     public String toString() {
         return super.toString() + ", AutoUtilitario{" + "capacidadDeCarga=" + capacidadDeCarga + ", volumenCarga=" + volumenCarga + '}';
     }
-    
-    
-    
-    
+
 }

@@ -3,6 +3,7 @@ package com.mycompany.laboratorio2;
 import javax.swing.JOptionPane;
 
 public class Auto {
+
     private String marca;
     private String modelo;
     private String color;
@@ -19,26 +20,23 @@ public class Auto {
 
     public Auto() {
     }
-    
-    
-    
-    public void avanzar(int km){
-        if(motor.requiereCambioAceite()){
+
+    public void avanzar(int km) {
+        if (motor.requiereCambioAceite()) {
             JOptionPane.showMessageDialog(null, "El auto necesita cambio de aceite.");
-        }else{
-           motor.sumarKms(km);
+        } else {
+            motor.sumarKms(km);
             System.out.println("El auto avanzo " + km + " kilometros");
         }
     }
 
-    public void mostrarInfo(){
-         JOptionPane.showMessageDialog(null, toString() + "\n" + motor.toString());
+    public void mostrarInfo() {
+        JOptionPane.showMessageDialog(null, toString() + "\n" + motor.toString());
     }
-    
+
     @Override
     public String toString() {
         return "Auto{" + "Marca= " + marca + ", Modelo= " + modelo + ", Color= " + color + ", Precio= " + precio + '}';
     }
-    
-    
+
 }

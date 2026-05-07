@@ -1,8 +1,9 @@
 package com.mycompany.laboratorio2;
 
 public class Motor {
+
     private final int CAMBIO_DE_ACEITE = 1000000;
-    
+
     private int kilometrosRecorridos;
     private float cilindrada;
     private int caballosFuerza;
@@ -12,15 +13,15 @@ public class Motor {
         this.cilindrada = cilindrada;
         this.caballosFuerza = caballosFuerza;
     }
-    
-    public boolean requiereCambioAceite(){
+
+    public boolean requiereCambioAceite() {
         return this.kilometrosRecorridos > CAMBIO_DE_ACEITE;
     }
 
-    public void sumarKms(int suma){
-        this.kilometrosRecorridos+= suma;
+    public void sumarKms(int suma) {
+        this.kilometrosRecorridos += suma;
     }
-    
+
     public int getKilometrosRecorridos() {
         return kilometrosRecorridos;
     }
@@ -50,5 +51,4 @@ public class Motor {
         return "Motor{" + "Kilometros recorridos= " + kilometrosRecorridos + ", Cilindrada= " + cilindrada + ", Caballos de fuerza= " + caballosFuerza + '}';
     }
 
-    
 }

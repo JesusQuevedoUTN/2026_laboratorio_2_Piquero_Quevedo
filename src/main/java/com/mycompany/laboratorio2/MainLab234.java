@@ -12,8 +12,6 @@ public class MainLab234 {
 
     public static void main(String[] args) {
         ArrayList<Auto> autos = new ArrayList();
-        ArrayList<Auto> autoStock = new ArrayList();
-        ArrayList<Auto> autosVendidos = new ArrayList();
         Scanner scan = new Scanner(System.in);
         
         //Ejemplos Lab 3
