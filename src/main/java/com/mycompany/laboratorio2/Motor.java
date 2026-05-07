@@ -1,4 +1,4 @@
-package com.mycompany.automg;
+package com.mycompany.laboratorio2;
 
 public class Motor {
     private final int CAMBIO_DE_ACEITE = 1000000;

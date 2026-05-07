@@ -1,4 +1,4 @@
-package com.mycompany.automg;
+package com.mycompany.laboratorio2;
 
 import javax.swing.JOptionPane;
 

@@ -1,9 +1,14 @@
-package com.mycompany.automg;
+package com.mycompany.laboratorio2;
 
+import com.mycompany.laboratorio2.Auto;
+import com.mycompany.laboratorio2.laboratorio3.AutoDeportivo;
+import com.mycompany.laboratorio2.laboratorio3.AutoFamiliar;
+import com.mycompany.laboratorio2.laboratorio3.AutoUtilitario;
+import com.mycompany.laboratorio2.Motor;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class AutoMG {
+public class MainLab234 {
 
     public static void main(String[] args) {
         ArrayList<Auto> autos = new ArrayList();
