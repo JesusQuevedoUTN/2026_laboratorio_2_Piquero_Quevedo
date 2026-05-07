@@ -15,8 +15,9 @@ public class Vendedor extends Empleado {
         this.cantidadDeVentas = cantidadDeVentas;
     }
 
-    public void venderAuto(ArrayList<Auto> stock, ArrayList<Auto> vendidos) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    public void venderAuto(ArrayList<Auto> stock, ArrayList<Auto> vendidos, Auto auto) {
+        stock.remove(auto);
+        vendidos.add(auto);
     }
 
     @Override

@@ -15,8 +15,8 @@ public class Administrativo extends Empleado{
         this.horasExtra = horasExtra;
     }
  
-    public void cargarAuto(ArrayList<Auto> stock){
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    public void cargarAuto(ArrayList<Auto> stock, Auto auto){
+        stock.add(auto);
     };
     
     @Override
