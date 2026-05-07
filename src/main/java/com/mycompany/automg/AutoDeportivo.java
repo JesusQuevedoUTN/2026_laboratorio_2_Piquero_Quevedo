@@ -3,6 +3,9 @@ package com.mycompany.automg;
 import javax.swing.JOptionPane;
 
 public class AutoDeportivo extends Auto{
+    
+    private double TIEMPO_LEGAL = 10;
+    
     private double velociadaMaxima;
     private double aceleracionACien;
 
@@ -30,7 +33,14 @@ public class AutoDeportivo extends Auto{
 
     
     
-    
+    @Override
+    public void avanzar(int km){
+        if(this.velociadaMaxima/this.aceleracionACien <= TIEMPO_LEGAL){
+            JOptionPane.showMessageDialog(null, "El auto por ley no puede acelerar tan rápido por seguridad." + "\n" + "TIEMPO LEGAL MÍNIMO: " + TIEMPO_LEGAL);
+        }else{
+           super.avanzar(km);
+        }
+    }
     
     @Override
     public String toString() {

@@ -35,9 +35,9 @@ public class AutoUtilitario extends Auto{
     @Override
     public void avanzar(int km){
         if(this.capacidadDeCarga >= MAXIMA_CARGA){
-            JOptionPane.showMessageDialog(null, "El camión no puede llevar algo tan pesado.");
+            JOptionPane.showMessageDialog(null, "El camión no puede llevar algo tan pesado." + "\n" + "PESO MÁXIMO: " + MAXIMA_CARGA);
         }else if (this.volumenCarga >= MAXIMO_VOLUMEN){
-            JOptionPane.showMessageDialog(null, "El camión no puede llevar algo tan grande.");
+            JOptionPane.showMessageDialog(null, "El camión no puede llevar algo tan grande." + "\n" + "VOLUMEN MÁXIMO: " + MAXIMO_VOLUMEN);
         }else{
             super.avanzar(km);
         }
