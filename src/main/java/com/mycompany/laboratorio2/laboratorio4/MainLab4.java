@@ -1,19 +1,19 @@
-package com.mycompany.laboratorio2;
+package com.mycompany.laboratorio2.laboratorio4;
 
-import com.mycompany.laboratorio2.Auto;
+import com.mycompany.laboratorio2.labotario2.Auto;
 import com.mycompany.laboratorio2.laboratorio3.AutoDeportivo;
 import com.mycompany.laboratorio2.laboratorio3.AutoFamiliar;
 import com.mycompany.laboratorio2.laboratorio3.AutoUtilitario;
-import com.mycompany.laboratorio2.Motor;
+import com.mycompany.laboratorio2.labotario2.Motor;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class MainLab234 {
+public class MainLab4 {
 
     public static void main(String[] args) {
         ArrayList<Auto> autos = new ArrayList();
         Scanner scan = new Scanner(System.in);
-        
+        /*
         //Ejemplos Lab 3
         autos.add(new AutoFamiliar("Toyota","Corolla","Azul",25000,new Motor(50000, 1.8f, 140),4,5));
         autos.add(new AutoDeportivo("Ford", "Mustang", "Rojo", 45000, new Motor(80000, 5.0f, 450), 15000, 2000));
@@ -35,6 +35,6 @@ public class MainLab234 {
         System.out.println("Cuanto quiere avanzar: ");
         int distancia = scan.nextInt();
         autos.get(num).avanzar(distancia);
-        
+        */
     }
 }

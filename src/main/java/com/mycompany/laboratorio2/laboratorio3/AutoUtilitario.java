@@ -12,7 +12,7 @@ public class AutoUtilitario extends Auto {
     private double capacidadDeCarga;
     private double volumenCarga;
 
-    public AutoUtilitario(double capacidadDeCarga, double volumenCarga, String marca, String modelo, String color, double precio, Motor motor) {
+    public AutoUtilitario(String marca, String modelo, String color, double precio, Motor motor, double capacidadDeCarga, double volumenCarga) {
         super(marca, modelo, color, precio, motor);
         this.capacidadDeCarga = capacidadDeCarga;
         this.volumenCarga = volumenCarga;

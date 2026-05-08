@@ -1,7 +1,7 @@
 package com.mycompany.laboratorio2.laboratorio4;
 
 // Autor: Chisus
-import com.mycompany.laboratorio2.Auto;
+import com.mycompany.laboratorio2.labotario2.Auto;
 import java.util.ArrayList;
 
 // Fecha de creación: 07/05/2026
