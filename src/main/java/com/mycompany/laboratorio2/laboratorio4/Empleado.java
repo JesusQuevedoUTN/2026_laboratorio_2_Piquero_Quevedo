@@ -58,10 +58,6 @@ abstract public class Empleado {
         return sueldoBasico;
     }
 
-    public static void setNroDeLegajo(int nroDeLegajo) {
-        Empleado.nroDeLegajo = nroDeLegajo;
-    }
-
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
@@ -76,10 +72,6 @@ abstract public class Empleado {
 
     public void setEmail(String email) {
         this.email = email;
-    }
-
-    public void setCodigoEmpleado(int codigoEmpleado) {
-        this.codigoEmpleado = codigoEmpleado;
     }
 
     public void setSueldoBasico(double sueldoBasico) {

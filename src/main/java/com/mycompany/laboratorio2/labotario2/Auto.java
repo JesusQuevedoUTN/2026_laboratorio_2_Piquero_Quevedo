@@ -4,11 +4,11 @@ import javax.swing.JOptionPane;
 
 public class Auto {
 
-    private String  marca;
-    private String  modelo;
-    private String  color;
-    private Motor   motor;
-    private double  precio;
+    private String marca;
+    private String modelo;
+    private String color;
+    private Motor motor;
+    private double precio;
 
     public Auto(String marca, String modelo, String color, double precio, Motor motor) {
         this.marca = marca;
@@ -19,6 +19,11 @@ public class Auto {
     }
 
     public Auto() {
+        this.marca = "";
+        this.modelo = "";
+        this.color = "";
+        this.precio = 0;
+        this.motor = new Motor(0, 0, 0);
     }
 
     public void avanzar(int km) {
@@ -29,7 +34,7 @@ public class Auto {
             JOptionPane.showMessageDialog(null, "El auto avanzo " + km + " kilometros");
         }
     }
-    
+
     public void mostrarInfo() {
         JOptionPane.showMessageDialog(null, toString() + "\n" + motor.toString());
     }

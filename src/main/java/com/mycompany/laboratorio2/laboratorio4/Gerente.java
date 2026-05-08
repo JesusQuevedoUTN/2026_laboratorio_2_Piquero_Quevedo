@@ -20,7 +20,29 @@ public class Gerente extends Empleado {
         this.vendedores = ventas;
     }
 
-    ;
+    public double getBono() {
+        return bono;
+    }
+
+    public void setBono(double bono) {
+        this.bono = bono;
+    }
+
+    public ArrayList<Administrativo> getAdministrativos() {
+        return administrativos;
+    }
+
+    public void setAdministrativos(ArrayList<Administrativo> administrativos) {
+        this.administrativos = administrativos;
+    }
+
+    public ArrayList<Vendedor> getVendedores() {
+        return vendedores;
+    }
+
+    public void setVendedores(ArrayList<Vendedor> vendedores) {
+        this.vendedores = vendedores;
+    }
 
     @Override
     public double calcularSueldo() {

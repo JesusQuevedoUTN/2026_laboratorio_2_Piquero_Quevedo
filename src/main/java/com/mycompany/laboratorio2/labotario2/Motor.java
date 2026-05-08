@@ -14,10 +14,10 @@ public class Motor {
         this.caballosFuerza = caballosFuerza;
     }
 
-    public boolean requiereCambioAceite(){
+    public boolean requiereCambioAceite() {
         return this.kilometrosRecorridos > CAMBIO_DE_ACEITE;
     }
-    
+
     public int getKilometrosRecorridos() {
         return kilometrosRecorridos;
     }
