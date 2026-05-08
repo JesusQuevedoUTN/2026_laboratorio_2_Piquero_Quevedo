@@ -1,7 +1,7 @@
 package com.mycompany.laboratorio2.laboratorio3;
 
-import com.mycompany.laboratorio2.Auto;
-import com.mycompany.laboratorio2.Motor;
+import com.mycompany.laboratorio2.labotario2.Auto;
+import com.mycompany.laboratorio2.labotario2.Motor;
 import javax.swing.JOptionPane;
 
 public class AutoFamiliar extends Auto {
